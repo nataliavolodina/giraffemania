@@ -1,0 +1,263 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+@import url(http://fonts.googleapis.com/css?family=Stalemate);
+
+
+.mainContent {
+  margin: 0;
+}
+
+.banner {
+  background-image: url(../images/giraffepattern.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  align-content: center;
+  position: relative;
+  top: 0;
+}
+
+.directory {
+  height: 160px;
+  width: 100%;
+  position: relative; 
+  text-align: center;
+  z-index: 100;
+  padding: 15px 0;
+}
+
+.navigation {
+  height: 65%;
+  width: 80%;
+  margin: 2% 10%;
+  position: relative;
+  border-bottom: 4px solid white;
+}
+
+.navigation > a {
+  color: #48D1CC;
+  font-size: 2em;
+  padding: 0 2%;
+  text-shadow: 3px 4px black;
+  text-decoration: none;
+  font-family: 'Nunito';
+}
+
+.navigation > a:hover {
+  color: white;
+  opacity: 0.7;
+}
+
+.welcome {
+  width: 50%;
+  margin: 0 25%;
+  z-index: 100;
+  position: relative;
+  text-align: center;
+  font-family: 'Nunito';
+}
+
+h1 {
+  color: white;
+  text-shadow: 3px 4px black;
+  font-size: 2em;
+  margin: 0;
+}
+
+.banner-par {
+  color: #48D1CC;
+  text-shadow: 2px 3px black;
+  font-size: 40px;
+}
+
+.g {
+  font-family: 'Grand Hotel';
+  text-shadow: 3px 5px black;
+  font-size: 100px;
+  color: red;
+  
+}
+
+.about {
+  width: 100%;
+  height: 540px;
+  position: absolute;
+}
+
+section.one {
+  width: 70%;
+  height: 100%;
+  position: relative;
+  float: left;
+  text-align: center;
+
+}
+
+section.two {
+  width: 25%;
+  height: 65%;
+  position: relative;
+  float: right;
+  text-align: center;
+  border-radius: 50%;
+  margin: 12% 3% 0 0;
+}
+
+.title1 {
+  font-family: 'Lobster';
+  color: red;
+  font-size: 3em;
+  margin: 10% 2% 2% 2%;
+}
+
+.title2 {
+  font-family: 'Lobster';
+  color: red;
+  font-size: 3em;
+  margin: 20% 2% 2% 2%;
+}
+p {
+  font-size: 1em;
+  font-family: 'Nunito';
+}
+
+.fa {
+  color: #48D1CC;
+  font-size: 60px;
+  text-shadow: 3px 4px black;
+  padding-right: 5%;
+}
+.fa:hover{
+  color: red;
+  opacity: .7;
+}
+.sectionPar {
+  z-index: 100;
+  color: #008B8B;
+  padding: 0 15%;
+  opacity: 1;
+}
+
+.section-image {
+  z-index: -10;
+  position: relative;
+  opacity: .2;
+  width: 40%;
+  height: 80%;
+  margin: 0;
+  top: -430px;
+  left: -350px;
+   -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.section2-image{
+  z-index: -1;
+  position: relative;
+  opacity: 0.2;
+  top: -207;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+  transform: rotate(10deg);
+}
+
+.mania {
+  font-family: 'Lobster';
+  color: red;
+  font-size: 20px;
+}
+.ribbonDiv {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+}
+
+.ribbon {
+ font-size: 2em !important;
+ font-family: 'Lobster';
+ letter-spacing: 3px;
+ width: 60%;
+ position: relative;
+ top: 470;
+ background: #48D1CC;
+ color: #fff;
+ text-align: center;
+ padding: 20px;
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #008B8B;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #804f7c transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+@media screen and (max-width: 1234px){
+  .navigation > a{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 930px){
+  .navigation > a{
+    font-size: 1em;
+    margin:0;
+  }
+  .section-image{
+    width: 50%;
+    height: 100%;
+  }
+
+  .ribbon{
+    top: 596px;
+  }
+}
+
+@media screen and (max-width: 618px){
+  .fa {
+    font-size: 2em;
+  }
+  .navigation {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .ribbonDiv{
+    display: none;
+  }
+  .ribbon {
+    display: none;
+}
